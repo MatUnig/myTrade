@@ -23,8 +23,6 @@ import java.io.IOException;
 public class TransController {
     @Autowired
     public TransService transService;
-    @Autowired
-    public UserDao userDao;
 
     @RequestMapping(value = "/pickProduct", method = RequestMethod.GET)
     public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
@@ -70,8 +68,6 @@ public class TransController {
     public String buyProduct(HttpServletRequest request, HttpServletResponse response,
                                    @ModelAttribute("transaction") Transaction transaction) throws IOException {
         transService.buy(transaction, request);
-
-
         return transService.toString() + "Gratuluje zakupu";
 
     }

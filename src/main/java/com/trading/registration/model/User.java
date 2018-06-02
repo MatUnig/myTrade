@@ -12,7 +12,7 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue
-    private long id;
+    private int id;
     @Column(name = "Name", length = 20)
     private String name;
     @Column(name = "Surname", length = 30)
@@ -47,11 +47,11 @@ public class User {
         this.balance = balance;
     }
 
-    public long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(int id) {
         this.id = id;
     }
 

@@ -9,11 +9,14 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
 
 @Controller
 public class LoginController {
@@ -38,8 +41,10 @@ public class LoginController {
 
         if (null != user) {
             mav = new ModelAndView("welcome");
-            Cookie c = new Cookie("user", login.getUsername());
-            response.addCookie(c);
+//            Cookie c = new Cookie("user", login.getUsername());
+//            response.addCookie(c);
+            HttpSession sess = request.getSession();
+            sess.setAttribute("user",user);
             mav.addObject("firstname", user.getName());
             mav.addObject("balance",user.getBalance());
         } else {
@@ -47,6 +52,17 @@ public class LoginController {
             mav.addObject("message", "Username or password is wrong.");
         }
         return mav;
+    }
+    @RequestMapping(value = "/logout", method = RequestMethod.GET)
+    @ResponseBody
+    public String logout(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        HttpSession sess = request.getSession();
+        if (sess.getAttribute("user") == null){
+            return "You are not logged in, please log in and try again";
+        }
+        User currentuser = (User) sess.getAttribute("user");
+        request.getSession().invalidate();
+        return "You have been logged out. Thank you for trading " + currentuser.getName() +".";
     }
 
 }
