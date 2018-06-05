@@ -36,6 +36,7 @@
             <td><form:label path="email">Email</form:label></td>
             <td><form:input path="email" name="email" id="email" /></td>
         </tr>
+        <td><form:input path="balance" name="balance" id="balance" type="hidden"/></td>
         <tr>
             <td></td>
             <td><form:button id="register" name="register">Register</form:button></td>

@@ -5,6 +5,8 @@ import com.trading.registration.model.Login;
 import com.trading.registration.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.servlet.http.HttpServletRequest;
+
 public class UserServiceImpl implements UserService {
 
     @Autowired
@@ -16,6 +18,11 @@ public class UserServiceImpl implements UserService {
 
     public User validateUser(Login login) {
         return userDao.validateUser(login);
+    }
+
+    @Override
+    public User applyChanges(User user) {
+        return userDao.applyChanges(user);
     }
 
 }

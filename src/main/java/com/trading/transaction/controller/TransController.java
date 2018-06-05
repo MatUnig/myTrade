@@ -3,6 +3,7 @@ package com.trading.transaction.controller;
 import com.trading.registration.dao.UserDao;
 import com.trading.registration.model.Login;
 import com.trading.registration.model.User;
+import com.trading.registration.service.UserService;
 import com.trading.transaction.dao.TransDao;
 import com.trading.transaction.functions.Function;
 import com.trading.transaction.model.Transaction;
@@ -17,59 +18,59 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 @Controller
 public class TransController {
     @Autowired
     public TransService transService;
+    @Autowired
+    public UserService userService;
 
     @RequestMapping(value = "/pickProduct", method = RequestMethod.GET)
     public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
                                 @ModelAttribute("transaction") Transaction transaction) throws IOException {
         ModelAndView mav = new ModelAndView("product");
-        String option = request.getParameter("products");
-        if (option.equals("usdpln")) {
-            mav.addObject("product", "USD/PLN");
-            mav.addObject("price", Function.doubleApiParser(
-                    "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=PLN&apikey=OXP7JS2TSKX8B130",
-                    "5. Exchange Rate"));
-        }
-        else if (option.equals("btc")) {
-            mav.addObject("product", "Bitcoin");
-            mav.addObject("price", Function.doubleApiParser(
-                    "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=BTC&to_currency=USD&apikey=OXP7JS2TSKX8B130",
-                    "5. Exchange Rate"));
-        }
-        else if (option.equals("eurusd")) {
-            mav.addObject("product", "EUR/USD");
-            mav.addObject("price", Function.doubleApiParser(
-                    "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=EUR&to_currency=USD&apikey=OXP7JS2TSKX8B130",
-                    "5. Exchange Rate"));
-        }
+        String fromCurrency = request.getParameter("fromCurrency");
+        String toCurrency = request.getParameter("toCurrency");
+        String product = Function.parseNames(fromCurrency, toCurrency);
+        double price = Function.parsePrice(fromCurrency, toCurrency);
+        mav.addObject("fromCurrency", fromCurrency);
+        mav.addObject("toCurrency", toCurrency);
+        mav.addObject("product", product);
+        mav.addObject("price", price);
         return mav;
-
     }
-    @RequestMapping(value = "/product", method = RequestMethod.GET)
-    public ModelAndView addProduct(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        ModelAndView mav = new ModelAndView("product");
-        String option = request.getParameter("products");
-        if (option.equals("usdpln")) {
-            mav.addObject("product", "USD/PLN");
-            mav.addObject("price", Function.doubleApiParser(
-                    "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=PLN&apikey=OXP7JS2TSKX8B130",
-                    "5. Exchange Rate"));
-        }
-        return mav;
 
-    }
     @RequestMapping(value = "/buyProduct", method = RequestMethod.POST)
     @ResponseBody
     public String buyProduct(HttpServletRequest request, HttpServletResponse response,
-                                   @ModelAttribute("transaction") Transaction transaction) throws IOException {
+                             @ModelAttribute("transaction") Transaction transaction) throws IOException {
         transService.buy(transaction, request);
-        return transService.toString() + "Gratuluje zakupu";
-
+        return "Gratuluje zakupu" + transaction.getProduct();
     }
+
+    @RequestMapping(value = "/showTrans", method = RequestMethod.GET)
+    @ResponseBody
+    public List<Transaction> showTrans(HttpServletRequest request) throws IOException {
+        List<Transaction> trans = transService.getTrans(request);
+        double profitSum=0;
+        for (Transaction t : trans){
+            Function.setCurrentPrice(t);
+            Function.setProfit(t);
+            profitSum+=t.getProfit();
+        }
+        HttpSession sess = request.getSession();
+        User currentUser = (User)sess.getAttribute("user");
+        currentUser.setBalance(currentUser.getBalance() + profitSum);
+        userService.applyChanges(currentUser);
+        return trans;
+    }
+    //@ModelAttribute("someReference")
+    //public List<Transaction>(){
+    // metoda ta bedzie dostepna dla wszystkich kontrolerow
+
 }
 

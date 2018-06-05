@@ -1,6 +1,6 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-         pageEncoding="ISO-8859-1"%>
+         pageEncoding="ISO-8859-1" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -15,14 +15,24 @@
     <tr>
         <td>Your current balance is ${balance}</td>
     </tr>
+
+
     <tr>
         <form action="/pickProduct">
-            <select name="products">
-                <option value="usdpln">USD/PLN</option>
-                <option value="btc">Bitcoin</option>
-                <option value="eurusd">EUR/USD</option>
+            From currency:</br>
+            <select name="fromCurrency">
+                <c:forEach items="${list}" var="shortName">
+                    <option value="${shortName}">${shortName}</option>
+                </c:forEach>
             </select>
-            <br><br>
+
+            </br>
+            To currency:</br>
+            <select name="toCurrency">
+                <c:forEach items="${list}" var="shortName">
+                    <option value="${shortName}">${shortName}</option>
+                    </c:forEach>
+            </select>
             <input type="submit">
         </form>
     </tr>

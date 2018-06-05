@@ -3,7 +3,6 @@ package com.trading.registration.model;
 import com.trading.transaction.model.Transaction;
 
 
-
 import javax.persistence.*;
 import java.util.List;
 
@@ -24,11 +23,10 @@ public class User {
     @Column(length = 40)
     private String password;
     @Column(precision = 12, scale = 2)
-    private double balance = 10000.00;
+    private double balance;
     @OneToMany
     @JoinColumn(name = "user_id")
     private List<Transaction> trans;
-
 
     public List<Transaction> getTrans() {
         return trans;
@@ -40,6 +38,7 @@ public class User {
     }
 
     public double getBalance() {
+
         return balance;
     }
 

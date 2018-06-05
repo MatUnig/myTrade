@@ -1,6 +1,8 @@
 package com.trading.registration.controller;
 
 
+import com.trading.currency.dao.CurrencyDao;
+import com.trading.currency.model.Currency;
 import com.trading.registration.model.Login;
 import com.trading.registration.model.User;
 import com.trading.registration.service.UserService;
@@ -17,18 +19,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.List;
 
 @Controller
 public class LoginController {
 
     @Autowired
     UserService userService;
+    @Autowired
+    CurrencyDao currencyDao;
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public ModelAndView showLogin(HttpServletRequest request, HttpServletResponse response) {
         ModelAndView mav = new ModelAndView("login");
         mav.addObject("login", new Login());
-
         return mav;
     }
 
@@ -36,17 +40,14 @@ public class LoginController {
     public ModelAndView loginProcess(HttpServletRequest request, HttpServletResponse response,
                                      @ModelAttribute("login") Login login) {
         ModelAndView mav = null;
-
         User user = userService.validateUser(login);
-
         if (null != user) {
             mav = new ModelAndView("welcome");
-//            Cookie c = new Cookie("user", login.getUsername());
-//            response.addCookie(c);
             HttpSession sess = request.getSession();
             sess.setAttribute("user",user);
             mav.addObject("firstname", user.getName());
             mav.addObject("balance",user.getBalance());
+            mav.addObject("list", currencyDao.getAll());
         } else {
             mav = new ModelAndView("login");
             mav.addObject("message", "Username or password is wrong.");
