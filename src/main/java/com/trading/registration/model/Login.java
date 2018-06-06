@@ -1,8 +1,11 @@
 package com.trading.registration.model;
 
-public class Login {
+import javax.validation.constraints.NotNull;
 
+public class Login {
+    @NotNull
     private String username;
+    @NotNull
     private String password;
     public String getUsername() {
         return username;

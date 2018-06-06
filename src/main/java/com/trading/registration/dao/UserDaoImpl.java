@@ -26,9 +26,6 @@ public class UserDaoImpl implements UserDao {
         newUser.setEmail(user.getEmail());
         newUser.setBalance(10000.00);
         entityManager.persist(newUser);
-//        registerManager.getTransaction().begin();
-//        registerManager.persist(newUser);
-//        registerManager.getTransaction().commit();
     }
 
     @Override

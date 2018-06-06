@@ -4,13 +4,23 @@ import com.trading.registration.dao.UserDao;
 import com.trading.transaction.dao.TransDao;
 import com.trading.transaction.model.Transaction;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.transaction.Transactional;
 import java.util.List;
 
+@Component
+@Transactional
 public class TransServiceImpl implements TransService {
-    @Autowired
-    public TransDao transDao;
+//    @Autowired
+//    public TransDao transDao;
+
+    private final TransDao transDao;
+
+    public TransServiceImpl(TransDao transDao) {
+        this.transDao = transDao;
+    }
 
     @Override
     public void buy(Transaction transaction, HttpServletRequest request) {
@@ -28,8 +38,9 @@ public class TransServiceImpl implements TransService {
     }
 
     @Override
-    public void applyChanges(Transaction transaction, HttpServletRequest request) {
+    public void applyChanges(Transaction transaction){}
 
-    }
+    @Override
+    public Transaction findById(int id){ return transDao.findById(id);  }
 
 }

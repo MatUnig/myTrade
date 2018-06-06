@@ -23,8 +23,19 @@ public class Transaction {
     private double profit;
     private String fromCurrency;
     private String toCurrency;
+    private String status;
     private LocalDateTime date;
     private int user_id;
+
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
 
 //    private LocalDateTime updated;
 //    @PreUpdate  - wlacza sie przed zrobieniem updatu

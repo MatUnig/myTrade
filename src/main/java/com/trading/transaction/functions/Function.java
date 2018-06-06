@@ -47,9 +47,18 @@ public class Function {
         transaction.setCurrentPrice(parsePrice(fromCurrency,toCurrency));
     }
     static public void setProfit(Transaction transaction){
-        transaction.setProfit((transaction.getCurrentPrice() - transaction.getPrice())*transaction.getQuantity());
+        if (transaction.getStatus().equals("Working")) {
+            transaction.setProfit((transaction.getCurrentPrice() - transaction.getPrice()) * transaction.getQuantity());
+        }
+        else{
+            transaction.setProfit(transaction.getProfit());
+        }
     }
     static public void applyChanges(User user) {
+        entityManager.merge(user);
+    }
+
+    static public void showCurrentTrans(User user) {
         entityManager.merge(user);
     }
 }

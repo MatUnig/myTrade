@@ -4,23 +4,28 @@ package com.trading.transaction.dao;
 import com.trading.registration.model.User;
 import com.trading.transaction.functions.Function;
 import com.trading.transaction.model.Transaction;
+import org.springframework.stereotype.Component;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-import javax.persistence.Query;
+import javax.persistence.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
+import javax.transaction.Transactional;
+import java.awt.print.Book;
 import java.io.IOException;
 import java.util.List;
 
+@Component
+@Transactional
 public class TransDaoImpl implements TransDao {
-    EntityManagerFactory entityManagerFactory =
-            Persistence.createEntityManagerFactory("myDatabaseConfig");
-    EntityManager buyManager = entityManagerFactory.createEntityManager();
-    EntityManager sellManager = entityManagerFactory.createEntityManager();
-    EntityManager transManager = entityManagerFactory.createEntityManager();
 
+    @PersistenceContext
+    EntityManager entityManager;
+
+//    EntityManagerFactory entityManagerFactory =
+//            Persistence.createEntityManagerFactory("myDatabaseConfig");
+//    EntityManager transManager = entityManagerFactory.createEntityManager();
+//    EntityManager findManager = entityManagerFactory.createEntityManager();
+//    EntityManager changesManager = entityManagerFactory.createEntityManager();
     @Override
     public void buy(Transaction transaction, HttpServletRequest request) {
         HttpSession sess = request.getSession();
@@ -37,9 +42,7 @@ public class TransDaoImpl implements TransDao {
         System.out.println(currentUser.getName());
         System.out.println(currentUser.getBalance());
         System.out.println(currentUser.getId());
-        buyManager.getTransaction().begin();
-        buyManager.persist(trans);
-        buyManager.getTransaction().commit();
+        entityManager.persist(trans);
     }
 
     @Override
@@ -47,9 +50,14 @@ public class TransDaoImpl implements TransDao {
 
     }
 
+    @Override
+    public Transaction findById(int id) {
+        return entityManager.find(Transaction.class, id);
+
+    }
 
     public List<Transaction> getTrans(HttpServletRequest request){
-        Query q = transManager.createQuery("SELECT x from Transaction x where x.user_id=:id");
+        Query q = entityManager.createQuery("SELECT x from Transaction x where x.user_id=:id");
         HttpSession sess = request.getSession();
         User currentUser = (User) sess.getAttribute("user");
         q.setParameter("id", currentUser.getId());
@@ -57,10 +65,8 @@ public class TransDaoImpl implements TransDao {
     }
 
     @Override
-    public void applyChanges(Transaction transaction, HttpServletRequest request) {
-        transManager.getTransaction().begin();
-        transManager.persist(transaction);
-        transManager.getTransaction().commit();
-        }
+    public void applyChanges(Transaction transaction){
+        entityManager.merge(transaction);
+    }
 
 }

@@ -5,15 +5,14 @@ import com.trading.registration.model.Login;
 import com.trading.registration.model.User;
 import com.trading.registration.service.UserService;
 import com.trading.transaction.dao.TransDao;
+import com.trading.transaction.dao.TransactionDao;
 import com.trading.transaction.functions.Function;
 import com.trading.transaction.model.Transaction;
 import com.trading.transaction.service.TransService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
@@ -24,10 +23,22 @@ import java.util.List;
 
 @Controller
 public class TransController {
-    @Autowired
-    public TransService transService;
-    @Autowired
-    public UserService userService;
+//    @Autowired
+//    public TransService transService;
+//    @Autowired
+//    public UserService userService;
+
+    private final TransService transService;
+
+    public TransController(TransService transService) {
+        this.transService = transService;
+    }
+
+//    private final TransactionDao transactionDao;
+//
+//    public TransController(TransactionDao transactionDao) {
+//        this.transactionDao = transactionDao;
+//    }
 
     @RequestMapping(value = "/pickProduct", method = RequestMethod.GET)
     public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
@@ -54,20 +65,48 @@ public class TransController {
 
     @RequestMapping(value = "/showTrans", method = RequestMethod.GET)
     @ResponseBody
-    public List<Transaction> showTrans(HttpServletRequest request) throws IOException {
+    public ModelAndView showTrans(HttpServletRequest request, Model model) throws IOException {
         List<Transaction> trans = transService.getTrans(request);
+        ModelAndView mav = new ModelAndView("transactions");
         double profitSum=0;
         for (Transaction t : trans){
             Function.setCurrentPrice(t);
             Function.setProfit(t);
             profitSum+=t.getProfit();
         }
+        model.addAttribute("trans",trans);
         HttpSession sess = request.getSession();
         User currentUser = (User)sess.getAttribute("user");
         currentUser.setBalance(currentUser.getBalance() + profitSum);
         userService.applyChanges(currentUser);
-        return trans;
+        return mav;
     }
+    @RequestMapping(value = "/close", method = RequestMethod.POST)
+    public String closeTrans(HttpServletRequest request) throws IOException {
+        int id = Integer.parseInt(request.getParameter("close"));
+        System.out.println(id);
+        Transaction trans = transService.findById(id);
+        System.out.println(trans.getPrice());
+        trans.setStatus("Closed");
+        transactionDao.updateTrans(trans);
+        return "redirect:/showTrans";
+    }
+    @RequestMapping(value = "/try", method = RequestMethod.GET)
+    @ResponseBody
+    public String close(){
+        Transaction trans = transService.findById(2);
+        trans.setStatus("czesc");
+        transactionDao.updateTrans(trans);
+        return "zmieniono";
+    }
+    //    @RequestMapping(value = "/try", method = RequestMethod.GET)
+//    @ResponseBody
+//    public String close(){
+//        Transaction trans = transService.findById(2);
+//        trans.setStatus("czesc");
+//        transactionDao.updateTrans(trans);
+//        return "zmieniono";
+//    }
     //@ModelAttribute("someReference")
     //public List<Transaction>(){
     // metoda ta bedzie dostepna dla wszystkich kontrolerow

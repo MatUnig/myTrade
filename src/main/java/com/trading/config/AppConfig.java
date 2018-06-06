@@ -13,9 +13,10 @@ import javax.persistence.EntityManagerFactory;
 
 @Configuration
 @EnableWebMvc
-@EnableTransactionManagement
 @ComponentScan(basePackages = "com.trading")
+@EnableTransactionManagement
 public class AppConfig extends WebMvcConfigurerAdapter {
+    
     @Bean
     public LocalEntityManagerFactoryBean entityManagerFactory() {
         LocalEntityManagerFactoryBean emfb = new LocalEntityManagerFactoryBean();

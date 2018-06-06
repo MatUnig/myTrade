@@ -1,9 +1,12 @@
 package com.trading.registration.model;
 
 import com.trading.transaction.model.Transaction;
+import org.hibernate.validator.constraints.Email;
+import org.hibernate.validator.constraints.NotBlank;
 
 
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Entity
@@ -13,14 +16,21 @@ public class User {
     @GeneratedValue
     private int id;
     @Column(name = "Name", length = 20)
+    @NotBlank
+    @Size(min=3, max=20)
     private String name;
     @Column(name = "Surname", length = 30)
+    @Size(min=2, max=30)
     private String surname;
     @Column(name = "Email")
+    @NotBlank
+//    @Email
     private String email;
     @Column(length = 30)
+    @NotBlank
     private String username;
     @Column(length = 40)
+    @NotBlank
     private String password;
     @Column(precision = 12, scale = 2)
     private double balance;
