@@ -21,12 +21,20 @@ public class Transaction {
     private double currentPrice;
     @Transient
     private double profit;
+    private double bookedProfit;
     private String fromCurrency;
     private String toCurrency;
     private String status;
     private LocalDateTime date;
     private int user_id;
 
+    public double getBookedProfit() {
+        return bookedProfit;
+    }
+
+    public void setBookedProfit(double bookedProfit) {
+        this.bookedProfit = bookedProfit;
+    }
 
     public String getStatus() {
         return status;

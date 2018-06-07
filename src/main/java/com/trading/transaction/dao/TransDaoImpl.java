@@ -65,8 +65,8 @@ public class TransDaoImpl implements TransDao {
     }
 
     @Override
-    public void applyChanges(Transaction transaction){
-        entityManager.merge(transaction);
+    public Transaction applyChanges(Transaction transaction){
+        return entityManager.merge(transaction);
     }
 
 }

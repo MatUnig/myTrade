@@ -148,59 +148,93 @@
       <change afterPath="$USER_HOME$/hibernate/src/main/java/pl/coderslab/entity/Publisher.java" afterDir="false" />
       <change afterPath="$USER_HOME$/hibernate/src/main/java/pl/coderslab/entity/PublisherDao.java" afterDir="false" />
       <change afterPath="$USER_HOME$/hibernate/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_4_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/myTrade_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/myTrade_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_8_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/config/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/config/AppInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/jpa/History.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/jpa/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/jpa/ModifyUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/jpa/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/controller/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/controller/RegistrationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/dao/UserDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/dao/UserDaoImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/model/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/service/UserServiceImpl.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/controller/TransController.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDao.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDaoImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransactionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/functions/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/model/Transaction.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ValidationMessages.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/transactions.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config/user-beans.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/welcome-file.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/artifacts/myTrade_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/myTrade_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/32fba467-2195-4ed2-bf69-62d0399fe9cf.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/32fba467-2195-4ed2-bf69-62d0399fe9cf.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/myTrade.iml" beforeDir="false" afterPath="$PROJECT_DIR$/myTrade.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/registration/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/registration/controller/RegistrationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/controller/RegistrationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/registration/dao/UserDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/dao/UserDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/registration/model/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/model/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/registration/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/registration/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/config/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/config/AppInitializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/transaction/controller/TransController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/controller/TransController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/transaction/functions/Function.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/functions/Function.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransactionDao.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/transaction/model/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/model/Transaction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/registration/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/registration/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/registration/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/registration/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/registration/model/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/registration/model/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/registration/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/registration/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/user-beans.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/user-beans.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/config/AppInitializer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/controller/TransController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/controller/TransController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/dao/TransDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/dao/TransDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/dao/TransDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/dao/TransDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/dao/TransactionDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/functions/Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/functions/Function.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/model/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/model/Transaction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/service/TransService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/service/TransService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/service/TransServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/WEB-INF/classes/com/trading/transaction/service/TransServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/jsp/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/jsp/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/jsp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/jsp/register.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/SpringMvcUser/jsp/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/SpringMvcUser/jsp/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/registration/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/registration/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/registration/controller/RegistrationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/registration/controller/RegistrationController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/registration/model/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/registration/model/Login.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/registration/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/registration/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/transaction/controller/TransController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/config/AppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/config/AppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/config/AppInitializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/config/AppInitializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/transaction/controller/TransController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/transaction/controller/TransController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/trading/transaction/dao/TransDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/transaction/dao/TransDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/transaction/dao/TransDaoImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/transaction/dao/TransDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/transaction/dao/TransDaoImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/trading/transaction/dao/TransactionDao.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/trading/transaction/functions/Function.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/transaction/functions/Function.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/trading/transaction/model/Transaction.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/transaction/model/Transaction.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/trading/transaction/service/TransService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/trading/transaction/service/TransService.class" afterDir="false" />
@@ -242,83 +276,99 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="myTrade: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="MySQL - myTrade@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="myTrade: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="Transaction: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="TransController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/controller/TransController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/controller/LoginController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="welcome.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-147">
+              <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="product.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/product.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="559">
+              <caret line="52" column="11" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/style/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="transactions.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/transactions.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="TransDaoImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDaoImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="67" column="53" lean-forward="true" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
+            <state relative-caret-position="53">
+              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
               <folding>
-                <element signature="e#2525#2526#0" expanded="true" />
-                <element signature="e#2573#2574#0" expanded="true" />
+                <element signature="e#2532#2533#0" expanded="true" />
+                <element signature="e#2587#2588#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TransController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/controller/TransController.java">
+      <file leaf-file-name="Transaction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/model/Transaction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user-beans.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/config/user-beans.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="84" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="84" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionDao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransactionDao.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="231">
+              <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#774#775#0" expanded="true" />
+                <element signature="e#830#831#0" expanded="true" />
+                <element signature="e#878#879#0" expanded="true" />
+                <element signature="e#1914#1915#0" expanded="true" />
+                <element signature="e#1949#1950#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -356,6 +406,9 @@
       <find>valid</find>
       <find>price</find>
       <find>setProfi</find>
+      <find>servlet</find>
+      <find>webm</find>
+      <find>getc</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -381,49 +434,49 @@
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/service/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/spring-mvc-servlet.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/user-beans.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/AppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/jpa/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/jpa/ModifyUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/jpa/Main.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/style/regStyle.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/style/style.css" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/functions/apiParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/AppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trading/config/AppInitializer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/functions/model/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/model/Trans.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/btc.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/currency/model/Currency.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/currency/dao/CurrencyDao.java" />
         <option value="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/product.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trading/config/AppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/dao/UserDao.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/model/Login.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/controller/RegistrationController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/jsp/register.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/controller/LoginController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/model/Transaction.java" />
         <option value="$PROJECT_DIR$/src/main/resources/ValidationMessages.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/jsp/transactions.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/functions/Function.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransactionDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/registration/dao/UserDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/spring-mvc-servlet.xml" />
+        <option value="$PROJECT_DIR$/src/main/resources/config/user-beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trading/config/AppInitializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trading/config/AppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransServiceImpl.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/model/Transaction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/functions/Function.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/trading/transaction/controller/TransController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/config/user-beans.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/transactions.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/home.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/style/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/jsp/product.jsp" />
       </list>
     </option>
   </component>
@@ -464,9 +517,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -507,6 +559,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="trading" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myTrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myTrade" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="trading" type="462c0819:PsiDirectoryNode" />
+              <item name="registration" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myTrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myTrade" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="trading" type="462c0819:PsiDirectoryNode" />
               <item name="transaction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -528,6 +599,26 @@
               <item name="trading" type="462c0819:PsiDirectoryNode" />
               <item name="transaction" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myTrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myTrade" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="trading" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="functions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myTrade" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myTrade" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="trading" type="462c0819:PsiDirectoryNode" />
+              <item name="transaction" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myTrade" type="b2602c69:ProjectViewProjectNode" />
@@ -575,12 +666,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="style" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -774,12 +866,14 @@
       <workItem from="1528270469874" duration="10000" />
       <workItem from="1528276269927" duration="437000" />
       <workItem from="1528276722184" duration="194000" />
-      <workItem from="1528276953243" duration="16285000" />
+      <workItem from="1528276953243" duration="20842000" />
+      <workItem from="1528313469977" duration="3268000" />
+      <workItem from="1528355770424" duration="7909000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="134031000" />
+    <option name="totallyTimeSpent" value="149765000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -791,36 +885,35 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.43505976" side_tool="true" visible="true" weight="0.31655845" />
+      <window_info anchor="bottom" id="Event Log" order="17" sideWeight="0.43984064" side_tool="true" visible="true" weight="0.3262987" />
       <window_info anchor="bottom" id="Application Servers" order="7" sideWeight="0.49880478" weight="0.32954547" />
       <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info id="Capture Tool" order="8" />
       <window_info id="Designer" order="3" />
-      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.1250996" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.1561753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="5" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.6749004" weight="0.24512987" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49721116" weight="0.32954547" />
-      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47888446" weight="0.2353896" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.47569722" weight="0.2353896" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="4" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49880478" weight="0.32954547" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5649402" visible="true" weight="0.31655845" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5601594" visible="true" weight="0.3262987" />
       <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49800798" weight="0.3116883" />
       <window_info anchor="bottom" id="Spring" order="16" sideWeight="0.4996016" weight="0.32954547" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4996016" weight="0.32954547" />
       <window_info id="Persistence" order="2" sideWeight="0.16028708" side_tool="true" weight="0.25737053" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8397129" visible="true" weight="0.25577688" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8397129" visible="true" weight="0.263745" />
       <window_info anchor="right" id="Bean Validation" order="9" />
       <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32954547" />
@@ -828,6 +921,7 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="9" sideWeight="0.49561754" weight="0.32954547" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Hibernate Console" order="11" weight="0.32954547" />
@@ -893,29 +987,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/config/AppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/btc.jsp" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/currency/model/currencies.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/currency/dao/CurrencyDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/currency/model/Currency.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://32fba467-2195-4ed2-bf69-62d0399fe9cf/schema/myTrade/table/Transaction/index/fkrq0lpy3mpjvjkeyrp4u3gr7bq">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -951,66 +1024,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/config/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://32fba467-2195-4ed2-bf69-62d0399fe9cf/schema/myTrade/table/Currency">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="26" lean-forward="true" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="105" column="20" lean-forward="true" selection-start-line="105" selection-start-column="20" selection-end-line="105" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar!/javax/validation/Valid.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="19" column="8" lean-forward="true" selection-start-line="19" selection-start-column="8" selection-end-line="20" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://32fba467-2195-4ed2-bf69-62d0399fe9cf/schema/myTrade/table/User">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="82" />
         </state>
       </provider>
     </entry>
@@ -1021,97 +1038,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="61" column="72" lean-forward="true" selection-start-line="61" selection-start-column="72" selection-end-line="61" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/ValidationMessages.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="13" lean-forward="true" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/controller/RegistrationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="33" column="87" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="26" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/model/Transaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-435">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/transactions.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="21" column="51" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/functions/Function.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="59" lean-forward="true" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/model/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/dao/UserDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://32fba467-2195-4ed2-bf69-62d0399fe9cf/schema/myTrade/table/Transaction">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/register.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/product.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1122,69 +1052,233 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="42" lean-forward="true" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        <state relative-caret-position="210">
+          <caret line="26" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/model/Login.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="8" selection-start-line="15" selection-start-column="8" selection-end-line="15" selection-end-column="8" />
+        <state relative-caret-position="75">
+          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="18" column="18" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="135">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDao.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/config/AppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="23" selection-start-line="23" selection-end-line="26" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/config/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="59">
+          <caret line="21" selection-start-line="21" selection-start-column="2" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/currency/dao/CurrencyDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/currency/model/Currency.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/controller/RegistrationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="33" column="87" selection-start-line="33" selection-start-column="67" selection-end-line="33" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/dao/UserDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="11" column="47" lean-forward="true" selection-start-line="11" selection-start-column="47" selection-end-line="11" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="67" column="53" lean-forward="true" selection-start-line="67" selection-start-column="53" selection-end-line="67" selection-end-column="53" />
-          <folding>
-            <element signature="e#2525#2526#0" expanded="true" />
-            <element signature="e#2573#2574#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransactionDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/controller/TransController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="92" column="5" lean-forward="true" selection-start-line="92" selection-start-column="5" selection-end-line="92" selection-end-column="5" />
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/config/user-beans.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="84" selection-start-line="8" selection-start-column="84" selection-end-line="8" selection-end-column="84" />
+        <state relative-caret-position="90">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/service/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/dao/UserDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransactionDao.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/service/TransServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="32" column="102" selection-start-line="32" selection-start-column="102" selection-end-line="32" selection-end-column="102" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://32fba467-2195-4ed2-bf69-62d0399fe9cf/schema/myTrade/table/User">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="114" column="21" selection-start-line="114" selection-start-column="21" selection-end-line="114" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://32fba467-2195-4ed2-bf69-62d0399fe9cf/schema/myTrade/table/Currency">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/model/Transaction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="86" column="8" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
+          <folding>
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#774#775#0" expanded="true" />
+            <element signature="e#830#831#0" expanded="true" />
+            <element signature="e#878#879#0" expanded="true" />
+            <element signature="e#1914#1915#0" expanded="true" />
+            <element signature="e#1949#1950#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/register.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="39" column="48" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="24" column="12" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/functions/Function.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="54" column="11" lean-forward="true" selection-start-line="54" selection-start-column="11" selection-end-line="54" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://32fba467-2195-4ed2-bf69-62d0399fe9cf/schema/myTrade/table/Transaction">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/controller/TransController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="64" column="17" lean-forward="true" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/registration/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="46" column="43" lean-forward="true" selection-start-line="46" selection-start-column="43" selection-end-line="46" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/trading/transaction/dao/TransDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="e#2532#2533#0" expanded="true" />
+            <element signature="e#2587#2588#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/transactions.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-147">
+          <caret line="16" column="9" lean-forward="true" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/jsp/product.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="52" column="11" lean-forward="true" selection-start-line="52" selection-start-column="11" selection-end-line="52" selection-end-column="11" />
         </state>
       </provider>
     </entry>

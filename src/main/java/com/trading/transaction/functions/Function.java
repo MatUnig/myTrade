@@ -46,13 +46,19 @@ public class Function {
         String toCurrency = transaction.getToCurrency();
         transaction.setCurrentPrice(parsePrice(fromCurrency,toCurrency));
     }
-    static public void setProfit(Transaction transaction){
-        if (transaction.getStatus().equals("Working")) {
-            transaction.setProfit((transaction.getCurrentPrice() - transaction.getPrice()) * transaction.getQuantity());
-        }
-        else{
-            transaction.setProfit(transaction.getProfit());
-        }
+    static public void setProfit(Transaction transaction) {
+        double profit = (transaction.getCurrentPrice() - transaction.getPrice()) * transaction.getQuantity();
+        transaction.setProfit(profit);
+//        if (transaction.getStatus().equals("Closed") && transaction.getBookedProfit()==0) {
+//            transaction.setBookedProfit();
+//            transaction.setProfit(0);
+//        }
+    }
+    static public void setProfitResult(Transaction transaction) throws IOException {
+        String fromCurrency = transaction.getFromCurrency();
+        String toCurrency = transaction.getToCurrency();
+        double profit = (parsePrice(fromCurrency,toCurrency) - transaction.getPrice()) * transaction.getQuantity();
+        transaction.setBookedProfit(profit);
     }
     static public void applyChanges(User user) {
         entityManager.merge(user);

@@ -10,17 +10,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.transaction.Transactional;
 import java.util.List;
 
-@Component
-@Transactional
 public class TransServiceImpl implements TransService {
-//    @Autowired
-//    public TransDao transDao;
-
-    private final TransDao transDao;
-
-    public TransServiceImpl(TransDao transDao) {
-        this.transDao = transDao;
-    }
+    @Autowired
+    public TransDao transDao;
 
     @Override
     public void buy(Transaction transaction, HttpServletRequest request) {
@@ -38,7 +30,7 @@ public class TransServiceImpl implements TransService {
     }
 
     @Override
-    public void applyChanges(Transaction transaction){}
+    public Transaction applyChanges(Transaction transaction){ return transDao.applyChanges(transaction);}
 
     @Override
     public Transaction findById(int id){ return transDao.findById(id);  }

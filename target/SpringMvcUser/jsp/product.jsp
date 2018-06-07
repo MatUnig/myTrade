@@ -6,6 +6,36 @@
 </head>
 <body>
 <p>
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+    <div id="tradingview_ca812"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/${fromCurrency}${toCurrency}/" rel="noopener" target="_blank"><span class="blue-text">${fromCurrency}${toCurrency} chart</span></a> by TradingView</div>
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    <script type="text/javascript">
+        new TradingView.widget(
+            {
+                "width": 780,
+                "height": 510,
+                "symbol": "${fromCurrency}${toCurrency}",
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "Light",
+                "style": "1",
+                "locale": "en",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "hide_side_toolbar": false,
+                "allow_symbol_change": true,
+                "details": true,
+                "news": [
+                    "headlines"
+                ],
+                "container_id": "tradingview_ca812"
+            }
+        );
+    </script>
+</div>
+<!-- TradingView Widget END -->
     Price: ${price} </br>
     Product: ${fromCurrency} / ${toCurrency}</br>
     </br>

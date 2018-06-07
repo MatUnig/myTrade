@@ -13,7 +13,7 @@ public interface TransService {
 
     List<Transaction> getTrans(HttpServletRequest request);
 
-    void applyChanges(Transaction transaction);
+    Transaction applyChanges(Transaction transaction);
 
     Transaction findById(int id);
 }

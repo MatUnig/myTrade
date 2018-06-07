@@ -5,7 +5,6 @@ import com.trading.registration.model.Login;
 import com.trading.registration.model.User;
 import com.trading.registration.service.UserService;
 import com.trading.transaction.dao.TransDao;
-import com.trading.transaction.dao.TransactionDao;
 import com.trading.transaction.functions.Function;
 import com.trading.transaction.model.Transaction;
 import com.trading.transaction.service.TransService;
@@ -23,22 +22,10 @@ import java.util.List;
 
 @Controller
 public class TransController {
-//    @Autowired
-//    public TransService transService;
-//    @Autowired
-//    public UserService userService;
-
-    private final TransService transService;
-
-    public TransController(TransService transService) {
-        this.transService = transService;
-    }
-
-//    private final TransactionDao transactionDao;
-//
-//    public TransController(TransactionDao transactionDao) {
-//        this.transactionDao = transactionDao;
-//    }
+    @Autowired
+    public TransService transService;
+    @Autowired
+    public UserService userService;
 
     @RequestMapping(value = "/pickProduct", method = RequestMethod.GET)
     public ModelAndView addUser(HttpServletRequest request, HttpServletResponse response,
@@ -72,7 +59,7 @@ public class TransController {
         for (Transaction t : trans){
             Function.setCurrentPrice(t);
             Function.setProfit(t);
-            profitSum+=t.getProfit();
+            profitSum+=t.getProfit()+t.getBookedProfit();
         }
         model.addAttribute("trans",trans);
         HttpSession sess = request.getSession();
@@ -88,25 +75,11 @@ public class TransController {
         Transaction trans = transService.findById(id);
         System.out.println(trans.getPrice());
         trans.setStatus("Closed");
-        transactionDao.updateTrans(trans);
+        Function.setProfitResult(trans);
+        transService.applyChanges(trans);
         return "redirect:/showTrans";
     }
-    @RequestMapping(value = "/try", method = RequestMethod.GET)
-    @ResponseBody
-    public String close(){
-        Transaction trans = transService.findById(2);
-        trans.setStatus("czesc");
-        transactionDao.updateTrans(trans);
-        return "zmieniono";
-    }
-    //    @RequestMapping(value = "/try", method = RequestMethod.GET)
-//    @ResponseBody
-//    public String close(){
-//        Transaction trans = transService.findById(2);
-//        trans.setStatus("czesc");
-//        transactionDao.updateTrans(trans);
-//        return "zmieniono";
-//    }
+
     //@ModelAttribute("someReference")
     //public List<Transaction>(){
     // metoda ta bedzie dostepna dla wszystkich kontrolerow

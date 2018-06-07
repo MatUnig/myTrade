@@ -9,7 +9,7 @@ public interface TransDao {
     void buy(Transaction transaction, HttpServletRequest request);
     void sell(Transaction transaction, HttpServletRequest request);
     List getTrans(HttpServletRequest request);
-    void applyChanges(Transaction transaction);
+    Transaction applyChanges(Transaction transaction);
     Transaction findById(int id);
     }
 

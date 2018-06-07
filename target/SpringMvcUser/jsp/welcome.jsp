@@ -10,7 +10,7 @@
 <body>
 <table>
     <tr>
-        <td>Welcome _set_firstName</td>
+        <td>Welcome ${firstname}</td>
     </tr>
     <tr>
         <td>Your current balance is ${balance}</td>
